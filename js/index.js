@@ -175,7 +175,7 @@ $(document).ready(function(){
                 chair_group.add(chair);
                 objects.push(chair);
             }
-            chair_group.add(box1);
+            // chair_group.add(box1);
 
         }
 
@@ -216,9 +216,9 @@ $(document).ready(function(){
     }
     animate();
     animated = false;
-   /* $('canvas').on('click',function(e){
-        animated = !animated;
-    });*/
+    $('canvas').on('click',function(e){
+        // animated = !animated;
+    });
 
 });
 
