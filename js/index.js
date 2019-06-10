@@ -175,7 +175,7 @@ $(document).ready(function(){
                 chair_group.add(chair);
                 objects.push(chair);
             }
-            //chair_group.add(box1);
+            chair_group.add(box1);
 
         }
 
@@ -185,8 +185,8 @@ $(document).ready(function(){
         document.addEventListener('mousedown', onDocumentMouseDown, false);
 
     };
-    //loader.load('./models/chair_geometry3.json',chair_load);
-    loader.load('./models/chair.json',chair_load);
+    loader.load('./models/chair_geometry3.json',chair_load);
+    //loader.load('./models/chair.json',chair_load);
     //var cube0 = new THREE.Mesh(new THREE.CubeGeometry(1,1,1), new THREE.MeshLambertMaterial({map:cube_texture}));
     //cube0.position.y = 0.5;
     //scene.add(cube0);
@@ -209,7 +209,7 @@ $(document).ready(function(){
         //camera.position.z = 400* Math.cos(angle);
         //angle += Math.PI/180 * 0.5;
         //camera.lookAt(cube0.position);
-        //render.render(scene,camera);
+        render.render(scene,camera);
     }
     function renderFunc(){
         render.render(scene,camera);
